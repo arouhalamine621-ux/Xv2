@@ -1,0 +1,1716 @@
+local enumValues, whiteColor, indigoAccentColor, fullCornerRadius, blackColor, cornerRadius6, slateButtonColor, collapsedSize, mutedRedSurfaceColor, cornerRadius7, zeroSize, oliveDisabledColor, fillSize, lightTextColor, navyColor, darkBackgroundColor, cornerRadius5, purpleAccentColor, darkSurfaceColor, redColor, grayColor, sliderFillSize, defaultButtonSize, verticalFillSize, cornerRadius8, centerAnchor, deepNavyColor, goldColor, standardRowSize, cornerRadius10, alertRedColor, lightRedColor, greenColor, cornerRadius4, orangeColor, panelBackgroundColor, violetColor, mediumGrayColor, _cachedStealPrompt, _cachedStealTarget, uiBuildYield
+local button1, button2, button3, createEspBillboard, addInlineScaleSlider, selectedPet, segmentCrossesPortal, buildDetourRoute, getMutationRank
+local newInstance = Instance.new
+local function setProperties(instance, properties)
+  local parent = properties.Parent
+  properties.Parent = nil
+  for propertyName, value in pairs(properties) do
+    instance[propertyName] = value
+  end
+  if parent then
+    instance.Parent = parent
+  end
+  return instance
+end
+local spawnLineEnabled = false
+local registerCleanupConnection, PlayersService, localPlayer, TeleportService, InputService, RunService, HttpService, ContentProviderService, StarterGuiService
+local TweenService, LightingService, TextService, sharedPriorityItems, isAutoPurchaseAllowed, WorkspaceRoot, fileSystemAvailable, earlyUISettings, isMobile, resetCharacterSafely
+local espEnabled, espHighlights, espBillboards, trackedESPItems, instantClonerEnabled, selectTargetKey, baseHubVisible, uiVisible, transparentPlotsEnabled, rainbowBeamEnabled
+local plotBeam, plotBeamAttachPlayer, createPlotBeam, plotsFolder, toggleClearBase, placeId, jobId
+do
+  do
+    local routeRunService, equipRoutingTools, computeOptimizedRoute, traverseRouteVelocity, applySmoothVelocityRamp, upperFloorThreshold, lowerBasePositions, upperBasePositions, lowerFloorY, findClosestBaseIndex
+    local getTargetAnimalPosition, teleportToTarget
+    do
+      local equipTeleportTool, computeFallbackRoute, suppressCharacterAnimations, moveAlongRoute, stopRootMotion, localPlayer2, lowerFloorRoutes, upperFloorRoutes
+      do
+        local isPathClear, routePlayersService, localPlayer3, routeIgnoredInstances
+        local moveThroughRoute
+        do
+          local isStrictObstacle, pathClearance, isLooseObstacle, PathfindingService, movementPlayersService, maxVerticalSpeed, waypointArrivalRadius, cardinalDirections
+          do
+            local netFolder, remoteHashSecret, decodeRemotePath, computeSha256Binary
+            do
+              do
+                local getSynchronizer
+                do
+                  if not game:IsLoaded() then
+                    game.Loaded:Wait()
+                  end
+                  enumValues = {
+                    gothamBoldFont = Enum.Font.GothamBold,
+                    gothamBlackFont = Enum.Font.GothamBlack,
+                    gothamSemiboldFont = Enum.Font.GothamSemibold,
+                    touchInput = Enum.UserInputType.Touch,
+                    primaryMouseButton = Enum.UserInputType.MouseButton1,
+                    keyboardInput = Enum.UserInputType.Keyboard,
+                    mouseMovementInput = Enum.UserInputType.MouseMovement,
+                    textAlignLeft = Enum.TextXAlignment.Left,
+                    textAlignCenter = Enum.TextXAlignment.Center,
+                    textAlignRight = Enum.TextXAlignment.Right,
+                    verticalAlignCenter = Enum.TextYAlignment.Center,
+                    easingOut = Enum.EasingDirection.Out,
+                    easingIn = Enum.EasingDirection.In,
+                    quadEasing = Enum.EasingStyle.Quad,
+                    backEasing = Enum.EasingStyle.Back,
+                    quintEasing = Enum.EasingStyle.Quint,
+                    truncateAtEnd = Enum.TextTruncate.AtEnd,
+                    layoutOrderSort = Enum.SortOrder.LayoutOrder,
+                    excludeRaycastFilter = Enum.RaycastFilterType.Exclude,
+                    siblingZIndex = Enum.ZIndexBehavior.Sibling,
+                    deadHumanoidState = Enum.HumanoidStateType.Dead,
+                    Players = game:GetService("Players"),
+                    ReplicatedStorage = game:GetService("ReplicatedStorage"),
+                    RunService = game:GetService("RunService"),
+                    Workspace = game:GetService("Workspace"),
+                    HttpService = game:GetService("HttpService"),
+                    TweenService = game:GetService("TweenService"),
+                    UserInputService = game:GetService("UserInputService"),
+                    TeleportService = game:GetService("TeleportService"),
+                    CoreGui = game:GetService("CoreGui"),
+                    Lighting = game:GetService("Lighting"),
+                    Debris = game:GetService("Debris"),
+                    SoundService = game:GetService("SoundService"),
+                    PathfindingService = game:GetService("PathfindingService"),
+                    TextService = game:GetService("TextService"),
+                  }
+                  whiteColor = Color3.fromRGB(255, 255, 255)
+                  indigoAccentColor = Color3.fromRGB(99, 102, 241)
+                  fullCornerRadius = UDim.new(1, 0)
+                  blackColor = Color3.fromRGB(0, 0, 0)
+                  cornerRadius6 = UDim.new(0, 6)
+                  slateButtonColor = Color3.fromRGB(74, 86, 128)
+                  collapsedSize = UDim2.new(1, 0, 0, 0)
+                  mutedRedSurfaceColor = Color3.fromRGB(60, 40, 50)
+                  cornerRadius7 = UDim.new(0, 7)
+                  zeroSize = UDim2.new(0, 0, 0, 0)
+                  oliveDisabledColor = Color3.fromRGB(80, 80, 60)
+                  fillSize = UDim2.new(1, 0, 1, 0)
+                  lightTextColor = Color3.fromRGB(220, 220, 230)
+                  navyColor = Color3.fromRGB(50, 50, 100)
+                  darkBackgroundColor = Color3.fromRGB(12, 12, 18)
+                  cornerRadius5 = UDim.new(0, 5)
+                  purpleAccentColor = Color3.fromRGB(160, 100, 170)
+                  darkSurfaceColor = Color3.fromRGB(30, 30, 35)
+                  redColor = Color3.fromRGB(255, 0, 0)
+                  grayColor = Color3.fromRGB(150, 150, 150)
+                  sliderFillSize = UDim2.new(0.85, 0, 0, 1)
+                  defaultButtonSize = UDim2.new(0, 100, 0, 30)
+                  verticalFillSize = UDim2.new(0, 0, 1, 0)
+                  cornerRadius8 = UDim.new(0, 8)
+                  centerAnchor = Vector2.new(0.5, 0.5)
+                  deepNavyColor = Color3.fromRGB(8, 8, 16)
+                  goldColor = Color3.fromRGB(255, 215, 0)
+                  standardRowSize = UDim2.new(1, 0, 0, 34)
+                  cornerRadius10 = UDim.new(0, 10)
+                  alertRedColor = Color3.fromRGB(255, 50, 50)
+                  lightRedColor = Color3.fromRGB(255, 100, 100)
+                  greenColor = Color3.fromRGB(100, 255, 100)
+                  cornerRadius4 = UDim.new(0, 4)
+                  orangeColor = Color3.fromRGB(255, 140, 0)
+                  panelBackgroundColor = Color3.fromRGB(25, 25, 35)
+                  violetColor = Color3.fromRGB(140, 80, 255)
+                  mediumGrayColor = Color3.fromRGB(120, 120, 120)
+                  _G._xenHUI = _G._xenHUI
+                    or function()
+                      local success, callResult = pcall(function()
+                        local isConditionMet = gethui or get_hidden_gui or gethiddenui
+                        return isConditionMet and isConditionMet()
+                      end)
+                      if success then
+                        success = typeof(callResult) == "Instance"
+                      end
+                      if success then
+                        return callResult
+                      end
+                      local success2, callResult2 = pcall(function()
+                        return cloneref(enumValues.CoreGui)
+                      end)
+                      if success2 and typeof(callResult2) == "Instance" then
+                        return callResult2
+                      end
+                      return enumValues.CoreGui
+                    end
+                  do
+                    local snapshot = _G
+                    local xenN = _G._xenN
+                    if not xenN then
+                      local function getValue()
+                        local randomGenerator = Random.new()
+                        local function getValue()
+                          local items = {}
+                          for i = 1, 16 do
+                            items[i] = string.char(randomGenerator:NextInteger(97, 122))
+                          end
+                          return table.concat(items)
+                        end
+                        return {
+                          tpp = getValue(),
+                          tcp = getValue(),
+                          mf = getValue(),
+                          la = getValue(),
+                          is = getValue(),
+                          pt = getValue(),
+                          tf = getValue(),
+                          tla = getValue(),
+                        }
+                      end
+                      xenN = getValue()
+                    end
+                    snapshot._xenN = xenN
+                  end
+                end
+                task.spawn(function()
+                  if not enumValues.Players.LocalPlayer then
+                    return
+                  end
+                  local function onCharacterAdded(character)
+                    if
+                      not (
+                        character:FindFirstChild("HumanoidRootPart") or character:WaitForChild("HumanoidRootPart", 10)
+                      )
+                    then
+                      return
+                    end
+                    local function onDescendantAdded(descendant)
+                      if descendant:IsA("BasePart") and descendant.Name ~= "__HITBOX" then
+                        pcall(function()
+                          descendant.CollisionGroup = "Default"
+                        end)
+                      end
+                    end
+                    for _, descendant in ipairs(character:GetDescendants()) do
+                      onDescendantAdded(descendant)
+                    end
+                    character.DescendantAdded:Connect(onDescendantAdded)
+                  end
+                  if enumValues.Players.LocalPlayer.Character then
+                    task.spawn(onCharacterAdded, enumValues.Players.LocalPlayer.Character)
+                  end
+                  enumValues.Players.LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+                end)
+                do
+                  local packages = enumValues.ReplicatedStorage:WaitForChild("Packages")
+                  packages:WaitForChild("Synchronizer")
+                  packages:WaitForChild("Net")
+                end
+                do
+                  local state = nil
+                  getSynchronizer = function()
+                    if state then
+                      return state
+                    end
+                    local success, callResult = pcall(function()
+                      return require(enumValues.ReplicatedStorage:WaitForChild("Packages"):WaitForChild("Synchronizer"))
+                    end)
+                    if success and type(callResult) == "table" then
+                      state = callResult
+                    end
+                    return state
+                  end
+                end
+                local knownSynchronizerChannels, getValue11, getValue2, handleState, findTarget2
+                do
+                  local items = {}
+                  knownSynchronizerChannels = {}
+                  local isEnabled = false
+                  getValue11 = function(data)
+                    if data == nil then
+                      return nil
+                    end
+                    if items[data] then
+                      return items[data]
+                    end
+                    local state13 = getSynchronizer()
+                    if not state13 then
+                      return nil
+                    end
+                    local state2 = nil
+                    pcall(function()
+                      state13:WaitAndCall(data, function(data)
+                        state2 = data
+                      end)
+                    end)
+                    if state2 then
+                      items[data] = state2
+                      knownSynchronizerChannels[data] = true
+                    end
+                    return state2
+                  end
+                  getValue2 = function(data)
+                    local state = getValue11(data)
+                    if not state then
+                      return nil
+                    end
+                    local state2 = rawget(state, "CacheTable")
+                    return type(state2) == "table" and state2 or nil
+                  end
+                  handleState = function()
+                    local plots_2 = enumValues.Workspace:FindFirstChild("Plots")
+                    if plots_2 then
+                      for _, child in ipairs(plots_2:GetChildren()) do
+                        knownSynchronizerChannels[child.Name] = true
+                      end
+                    end
+                    if enumValues.Players.LocalPlayer then
+                      knownSynchronizerChannels[enumValues.Players.LocalPlayer.Name] = true
+                    end
+                    for _, item in ipairs({
+                      "Cycle",
+                      "Events",
+                      "ServerLuck",
+                    }) do
+                      knownSynchronizerChannels[item] = true
+                    end
+                  end
+                  findTarget2 = function()
+                    if isEnabled then
+                      return
+                    end
+                    isEnabled = true
+                    local state14 = getSynchronizer()
+                    if not state14 then
+                      return
+                    end
+                    pcall(function()
+                      state14.OnChannelCreated:Connect(function(data)
+                        local state15 = rawget(data, "Index")
+                        if state15 ~= nil then
+                          items[state15] = data
+                          knownSynchronizerChannels[state15] = true
+                        end
+                      end)
+                      state14.OnChannelDestroyed:Connect(function(data)
+                        local state16 = rawget(data, "Index")
+                        if state16 ~= nil then
+                          items[state16] = nil
+                          knownSynchronizerChannels[state16] = nil
+                        end
+                      end)
+                    end)
+                    pcall(function()
+                      local plots = enumValues.Workspace:FindFirstChild("Plots")
+                      if plots then
+                        plots.ChildAdded:Connect(function(child)
+                          knownSynchronizerChannels[child.Name] = true
+                        end)
+                        plots.ChildRemoved:Connect(function(child)
+                          knownSynchronizerChannels[child.Name] = nil
+                          items[child.Name] = nil
+                        end)
+                      end
+                    end)
+                  end
+                end
+                do
+                  local function getValue12()
+                    findTarget2()
+                    handleState()
+                    return knownSynchronizerChannels
+                  end
+                  _G._xenRawCT = function(data)
+                    return getValue2(data)
+                  end
+                  _G.XenSyncGet = function(data)
+                    return getValue11(data)
+                  end
+                  _G.XenSyncBind = function()
+                    return getValue12()
+                  end
+                  _G.XenSyncAll = function()
+                    local items = {}
+                    for k in pairs(getValue12()) do
+                      local state = getValue11(k)
+                      if state then
+                        items[k] = state
+                      end
+                    end
+                    return items
+                  end
+                  local xenSync = {
+                    Read = function(data)
+                      return getValue2(data)
+                    end,
+                    Channel = function(data)
+                      return getValue11(data)
+                    end,
+                    Indices = function()
+                      local items = {}
+                      for k in pairs(getValue12()) do
+                        items[#items + 1] = k
+                      end
+                      return items
+                    end,
+                    AnimalList = function(data)
+                      local animalList = getValue2(data)
+                      animalList = animalList and animalList.AnimalList
+                      return type(animalList) == "table" and animalList or nil
+                    end,
+                    Owner = function(data)
+                      local owner = getValue2(data)
+                      owner = owner and owner.Owner
+                      if owner == nil then
+                        return nil
+                      end
+                      local isActive = typeof(owner) == "Instance"
+                      local isActive2
+                      if isActive then
+                        isActive2 = isActive
+                      else
+                        isActive2 = type(owner) == "table"
+                      end
+                      if isActive2 then
+                        return owner.Name
+                      end
+                      return tostring(owner)
+                    end,
+                    Generation = function(data, data2, data3)
+                      return _G._xenGen and _G._xenGen(data, data2, data3) or 0
+                    end,
+                    ChGet = function(data, data2)
+                      if not data then
+                        return nil
+                      end
+                      local state = rawget(data, "CacheTable")
+                      if type(state) == "table" then
+                        return state[data2]
+                      end
+                      return nil
+                    end,
+                  }
+                  _G.XenChGet = xenSync.ChGet
+                  xenSync.ScanAll = function(data)
+                    local isConditionMet = data or 0
+                    local items = {}
+                    for _, item in ipairs(xenSync.Indices()) do
+                      local state = getValue2(item)
+                      if type(state) == "table" and type(state.AnimalList) == "table" then
+                        local owner = state.Owner
+                        local name = owner ~= nil
+                            and ((typeof(owner) == "Instance" or type(owner) == "table") and owner.Name or tostring(
+                              owner
+                            ))
+                          or nil
+                        for k, itemLocal448 in pairs(state.AnimalList) do
+                          local index = type(itemLocal448) == "table" and itemLocal448.Index
+                          if index then
+                            index = not (
+                              itemLocal448.Machine
+                              and itemLocal448.Machine.Type == "Fuse"
+                              and itemLocal448.Machine.Active
+                            )
+                          end
+                          if index then
+                            local xenGen = _G._xenGen
+                                and _G._xenGen(itemLocal448.Index, itemLocal448.Mutation, itemLocal448.Traits)
+                              or 0
+                            if isConditionMet <= xenGen then
+                              local mutation = itemLocal448.Mutation
+                              if mutation == "None" or mutation == "" then
+                                mutation = nil
+                              end
+                              items[#items + 1] = {
+                                name = itemLocal448.Index,
+                                rawIndex = itemLocal448.Index,
+                                value = xenGen,
+                                mutation = mutation,
+                                traits = itemLocal448.Traits,
+                                owner = name,
+                                plot = item,
+                                slot = tostring(k),
+                                uid = tostring(item) .. "_" .. tostring(k),
+                              }
+                            end
+                          end
+                        end
+                      end
+                    end
+                    table.sort(items, function(data, data2)
+                      return data.value > data2.value
+                    end)
+                    return items
+                  end
+                  _G.XenSync = xenSync
+                  task.spawn(function()
+                    pcall(getValue12)
+                  end)
+                end
+              end
+              do
+                local genv, xenSigsSet, getValue13
+                do
+                  local Animals = nil
+                  local Mutations = nil
+                  local Traits = nil
+                  local function findTarget()
+                    if Animals then
+                      return true
+                    end
+                    return pcall(function()
+                      local datas = enumValues.ReplicatedStorage:WaitForChild("Datas")
+                      Animals = require(datas:WaitForChild("Animals"))
+                      Mutations = require(datas:WaitForChild("Mutations"))
+                      Traits = require(datas:WaitForChild("Traits"))
+                    end) and Animals ~= nil
+                  end
+                  _G._xenGen = function(data, data2, collection)
+                    if not findTarget() then
+                      return 0
+                    end
+                    local entry = Animals[data]
+                    if not entry then
+                      return 0
+                    end
+                    local generation = entry.Generation or 0
+                    local isActive = data2 and data2 ~= "None" and data2 ~= ""
+                    local amount = 1
+                    if isActive then
+                      local entry = Mutations[data2]
+                      if entry and entry.Modifier then
+                        amount = 1 + entry.Modifier
+                      end
+                    end
+                    local isEnabled = false
+                    if type(collection) == "table" then
+                      for _, item in pairs(collection) do
+                        local entry = Traits[item]
+                        if entry then
+                          if item == "Sleepy" then
+                            isEnabled = true
+                          else
+                            amount += entry.MultiplierModifier or 0
+                          end
+                        end
+                      end
+                    end
+                    local calculatedValue = generation * amount
+                    if isEnabled then
+                      calculatedValue *= 0.5
+                    end
+                    return math.round(calculatedValue)
+                  end
+                end
+                _G._xenAnimShim = {
+                  GetGeneration = function(data, data2, data3, data4)
+                    return _G._xenGen(data2, data3, data4)
+                  end,
+                }
+                do
+                  local animals = nil
+                  local instance21 = nil
+                  local mutationSurfaces = nil
+                  local function findTarget()
+                    if animals then
+                      return
+                    end
+                    pcall(function()
+                      local models = enumValues.ReplicatedStorage:FindFirstChild("Models")
+                      if models then
+                        animals = models:FindFirstChild("Animals")
+                        if not animals or #animals:GetChildren() == 0 then
+                          local traitsPerAnimal = models:FindFirstChild("TraitsPerAnimal")
+                          if traitsPerAnimal then
+                            local amount = 0
+                            local state17 = nil
+                            for _, child in ipairs(traitsPerAnimal:GetChildren()) do
+                              local state18 = #child:GetChildren()
+                              if amount < state18 then
+                                amount = state18
+                                state17 = child
+                              end
+                            end
+                            animals = state17
+                          end
+                        end
+                      end
+                      local animations = enumValues.ReplicatedStorage:FindFirstChild("Animations")
+                      if animations then
+                        instance21 = animations:FindFirstChild("Animals") or animations
+                      end
+                      mutationSurfaces = enumValues.ReplicatedStorage:FindFirstChild("MutationSurfaces")
+                    end)
+                  end
+                  local function checkCondition(instance)
+                    local amount = 0
+                    for _, descendant in ipairs(instance:GetDescendants()) do
+                      if descendant:IsA("BasePart") then
+                        amount += 1
+                      end
+                    end
+                    return amount
+                  end
+                  local function findTarget2(childName)
+                    local lowercaseText = childName:lower()
+                    local assetCache = enumValues.ReplicatedStorage:FindFirstChild("Controllers")
+                      and enumValues.ReplicatedStorage.Controllers:FindFirstChild("AnimalController")
+                    assetCache = assetCache and assetCache:FindFirstChild("AssetCache")
+                    if not assetCache then
+                      return nil
+                    end
+                    local state = assetCache:FindFirstChild(childName)
+                    if state and checkCondition(state) > 0 then
+                      return state
+                    end
+                    for _, child in ipairs(assetCache:GetChildren()) do
+                      local isActive = child.Name:lower() == lowercaseText
+                      if isActive then
+                        isActive = checkCondition(child) > 0
+                      end
+                      if isActive then
+                        return child
+                      end
+                    end
+                    return nil
+                  end
+                  _G.buildViewport = function(parent, childName, childName2)
+                    findTarget()
+                    if not animals then
+                      return
+                    end
+                    if not childName or childName == "" then
+                      return
+                    end
+                    local state = findTarget2(childName)
+                    if not state then
+                      return
+                    end
+                    local clone = nil
+                    pcall(function()
+                      clone = state:Clone()
+                    end)
+                    if not clone then
+                      return
+                    end
+                    local ViewportFrame = newInstance("ViewportFrame")
+                    setProperties(ViewportFrame, {
+                      Size = fillSize,
+                      BackgroundTransparency = 1,
+                      LightColor = whiteColor,
+                      LightDirection = Vector3.new(-1, -2, -1),
+                      Ambient = Color3.fromRGB(180, 180, 180),
+                      Parent = parent,
+                    })
+                    local parentModel = newInstance("WorldModel")
+                    parentModel.Parent = ViewportFrame
+                    for _, descendant in ipairs(clone:GetDescendants()) do
+                      pcall(function()
+                        if
+                          descendant:IsA("BillboardGui")
+                          or descendant:IsA("SurfaceGui")
+                          or descendant:IsA("ProximityPrompt")
+                          or descendant:IsA("Sound")
+                          or descendant:IsA("ParticleEmitter")
+                          or descendant:IsA("Trail")
+                          or descendant:IsA("Beam")
+                          or descendant:IsA("Fire")
+                          or descendant:IsA("Smoke")
+                          or descendant:IsA("Sparkles")
+                          or descendant:IsA("Script")
+                          or descendant:IsA("LocalScript")
+                        then
+                          descendant:Destroy()
+                        end
+                      end)
+                    end
+                    pcall(function()
+                      if clone:IsA("Model") then
+                        clone:PivotTo(CFrame.new(0, 0, 0))
+                      elseif clone:IsA("BasePart") then
+                        clone.CFrame = CFrame.new(0, 0, 0)
+                      end
+                    end)
+                    clone.Parent = parentModel
+                    if clone:IsA("BasePart") then
+                      clone.Anchored = true
+                      clone.CanCollide = false
+                      clone.CastShadow = false
+                    end
+                    if clone:IsA("Model") and clone.PrimaryPart then
+                      clone.PrimaryPart.Anchored = true
+                    end
+                    for _, descendant in ipairs(clone:GetDescendants()) do
+                      if descendant:IsA("BasePart") then
+                        descendant.Anchored = true
+                        descendant.CanCollide = false
+                        descendant.CastShadow = false
+                        descendant.Massless = true
+                      end
+                    end
+                    if childName2 and childName2 ~= "" and mutationSurfaces then
+                      pcall(function()
+                        local instance = mutationSurfaces:FindFirstChild(childName2)
+                        if not instance then
+                          local lowercaseText = childName2:lower()
+                          for _, child in ipairs(mutationSurfaces:GetChildren()) do
+                            if
+                              child.Name:lower() == lowercaseText or child.Name:lower():find(lowercaseText, 1, true)
+                            then
+                              instance = child
+                              break
+                            end
+                          end
+                        end
+                        if instance and instance:IsA("SurfaceAppearance") then
+                          local items = {}
+                          if clone:IsA("MeshPart") then
+                            table.insert(items, clone)
+                          end
+                          for _, descendant in ipairs(clone:GetDescendants()) do
+                            if descendant:IsA("MeshPart") then
+                              table.insert(items, descendant)
+                            end
+                          end
+                          for _, item in ipairs(items) do
+                            for _, child in ipairs(item:GetChildren()) do
+                              if child:IsA("SurfaceAppearance") then
+                                child:Destroy()
+                              end
+                            end
+                            instance:Clone().Parent = item
+                          end
+                        end
+                      end)
+                    end
+                    pcall(function()
+                      local cf, size
+                      if clone:IsA("Model") then
+                        cf, size = clone:GetBoundingBox()
+                      elseif clone:IsA("BasePart") then
+                        cf = clone.CFrame
+                        size = clone.Size
+                      end
+                      if cf and size then
+                        local maxDim = math.max(size.X, size.Y, size.Z)
+                        local camera = newInstance("Camera")
+                        camera.CFrame = CFrame.new(cf.Position + Vector3.new(0, maxDim * 0.2, maxDim * 1.5), cf.Position)
+                        camera.Parent = ViewportFrame
+                        ViewportFrame.CurrentCamera = camera
+                      end
+                    end)
+                    return ViewportFrame
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
+
+pcall(function()
+    if setthreadidentity then
+        setthreadidentity(8)
+    end
+end)
+local PService = game:GetService("Players")
+local LPlayer = PService.LocalPlayer
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+local PState = {
+    SelectedPetData = nil,
+    AllAnimalsCache = nil,
+    ListNeedsRedraw = true,
+    MobileScaleObjects = {},
+    RefreshUIScale = nil,
+}
+
+do
+    local C_Auto = { AUTO_STEAL = false, RADIUS = 12 }
+    local r = {
+        {
+            min = Vector3.new(-337.448303, -3.898971, -122.397758),
+            max = Vector3.new(-328.004578, -3.898971, 242.625626),
+        },
+        {
+            min = Vector3.new(-327.25766, -3.899109, -122.228622),
+            max = Vector3.new(-320.600891, -3.899109, 242.612259),
+        },
+        {
+            min = Vector3.new(-319.783386, -3.89897, -122.227089),
+            max = Vector3.new(-312.908325, -3.89897, 242.585617),
+        },
+        {
+            min = Vector3.new(-312.445648, -3.899108, -122.389832),
+            max = Vector3.new(-305.489899, -3.899108, 242.456818),
+        },
+        {
+            min = Vector3.new(-305.037048, -3.89897, -122.230743),
+            max = Vector3.new(-293.957489, -3.89897, 242.606873),
+        },
+        {
+            min = Vector3.new(-491.448608, -3.898972, -122.253258),
+            max = Vector3.new(-481.811737, -3.898972, 242.615005),
+        },
+        {
+            min = Vector3.new(-498.971069, -3.89897, -122.382767),
+            max = Vector3.new(-491.74884, -3.89897, 242.612061),
+        },
+        {
+            min = Vector3.new(-506.436737, -3.898972, -122.411476),
+            max = Vector3.new(-499.318542, -3.898972, 242.615982),
+        },
+        {
+            min = Vector3.new(-513.783569, -3.898972, -122.223297),
+            max = Vector3.new(-506.801849, -3.898972, 242.62709),
+        },
+        {
+            min = Vector3.new(-525.236938, -3.898972, -122.409813),
+            max = Vector3.new(-514.265015, -3.898972, 242.608932),
+        },
+    }
+    local RService = game:GetService("RunService")
+    do
+        local camConn
+        local function initCam()
+            LPlayer.DevEnableMouseLock = true
+            LPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam
+            if camConn then
+                camConn:Disconnect()
+            end
+            camConn = RService.RenderStepped:Connect(function()
+                local cam = workspace.CurrentCamera
+                if cam and cam.CameraSubject and cam.CameraType == Enum.CameraType.Custom then
+                    cam.CFrame = cam.CFrame
+                end
+            end)
+        end
+        initCam()
+        LPlayer.CharacterAdded:Connect(function()
+            task.wait(0.5)
+            initCam()
+        end)
+    end
+    local promptMap = {}
+    local promptCooldowns = {}
+    local pollBoostTime = 0
+    function _G.getSafePollRate()
+        if os.clock() < pollBoostTime then
+            return 0.27
+        end
+        return 0.1
+    end
+    function _G.triggerSafePollBoost()
+        pollBoostTime = os.clock() + 3
+    end
+    local promptTimes = {}
+    local function getRootPart()
+        local char = LPlayer.Character
+        return char and char:FindFirstChild("HumanoidRootPart")
+    end
+    local function getPlotIndex(pos)
+        for idx, box in ipairs(r) do
+            if
+                pos.X >= math.min(box.min.X, box.max.X)
+                and pos.X <= math.max(box.min.X, box.max.X)
+                and pos.Z >= math.min(box.min.Z, box.max.Z)
+                and pos.Z <= math.max(box.min.Z, box.max.Z)
+            then
+                return idx
+            end
+        end
+    end
+    local function getPromptPos(prompt)
+        local parent = prompt.Parent
+        if not parent then
+            return
+        end
+        if parent:IsA("Attachment") and parent.Parent then
+            parent = parent.Parent
+        end
+        if parent:IsA("BasePart") then
+            return parent.Position
+        elseif parent:IsA("Model") then
+            return parent:GetPivot().Position
+        end
+    end
+    local function matchesSelectedPet(prompt)
+        if not PState then
+            return false
+        end
+        local sel = PState.SelectedPetData
+        if not sel then
+            return false
+        end
+        local model = prompt:FindFirstAncestorOfClass("Model")
+        if not model then
+            return false
+        end
+        if sel.plot then
+            local plotNode = prompt:FindFirstAncestor(sel.plot)
+            if not plotNode then
+                return false
+            end
+        end
+        if sel.slot then
+            local slotNode = prompt:FindFirstAncestor(sel.slot)
+            if slotNode then
+                return true
+            end
+            if model.Name == sel.slot then
+                return true
+            end
+            if model.Parent and model.Parent.Name == sel.slot then
+                return true
+            end
+        end
+        if sel.name then
+            local nameLow = string.lower(sel.name)
+            local curr = model
+            while curr do
+                if curr.Name and string.lower(curr.Name) == nameLow then
+                    return true
+                end
+                curr = curr.Parent
+            end
+        end
+        return false
+    end
+    local function isPromptValid(prompt, targetPos)
+        if not prompt or not prompt.Parent then
+            return false
+        end
+        if not prompt.Enabled then
+            return false
+        end
+        local promptPos = getPromptPos(prompt)
+        if not promptPos then
+            return false
+        end
+        local model = prompt:FindFirstAncestorOfClass("Model")
+        if model then
+            local plotsFolderRef = workspace:FindFirstChild("Plots")
+            if plotsFolderRef then
+                local ancestorModel = prompt:FindFirstAncestorWhichIsA("Model")
+                while ancestorModel and ancestorModel.Parent ~= plotsFolderRef do
+                    ancestorModel = ancestorModel.Parent
+                end
+                if ancestorModel then
+                    local plotSign = ancestorModel:FindFirstChild("PlotSign")
+                    if plotSign then
+                        local surfGui = plotSign:FindFirstChildWhichIsA("SurfaceGui", true)
+                        local textLabel = surfGui and surfGui:FindFirstChildWhichIsA("TextLabel", true)
+                        if textLabel then
+                            local txt = textLabel.Text:lower()
+                            if
+                                txt:find(game.Players.LocalPlayer.Name:lower(), 1, true)
+                                or txt:find(game.Players.LocalPlayer.DisplayName:lower(), 1, true)
+                            then
+                                return false
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if _G.NEAREST_INSTANT_MODE == true then
+            local rIdx = getPlotIndex(targetPos)
+            local pIdx = getPlotIndex(promptPos)
+            if not rIdx or rIdx ~= pIdx then
+                return false
+            end
+        end
+        if _G.NEAREST_INSTANT_MODE ~= true then
+            if not matchesSelectedPet(prompt) then
+                return false
+            end
+        end
+        local maxDist = typeof(prompt.MaxActivationDistance) == "number"
+                and prompt.MaxActivationDistance > 0
+                and prompt.MaxActivationDistance
+            or C_Auto.RADIUS
+        local effectiveRadius = math.min(C_Auto.RADIUS, maxDist)
+        return (promptPos - targetPos).Magnitude <= effectiveRadius
+    end
+    local function checkCooldown(prompt, cooldown)
+        local now = os.clock()
+        local last = promptCooldowns[prompt]
+        if last and now - last < cooldown then
+            return false
+        end
+        promptCooldowns[prompt] = now
+        return true
+    end
+    local function firePrompt(prompt, count, cooldown)
+        if not prompt or not prompt.Parent then
+            return
+        end
+        if not prompt.Enabled then
+            return
+        end
+        if not checkCooldown(prompt, cooldown) then
+            return
+        end
+        for _ = 1, count do
+            pcall(function()
+                fireproximityprompt(prompt, 0)
+            end)
+        end
+    end
+    local function setupPrompt(prompt)
+        if promptMap[prompt] then
+            return
+        end
+        promptMap[prompt] = true
+        local function checkAndFire()
+            local root = getRootPart()
+            if not root then
+                return
+            end
+            local pos = root.Position
+            if isPromptValid(prompt, pos) then
+                C_Auto.AUTO_STEAL = true
+                local now = os.clock()
+                local lastTime = promptTimes[prompt]
+                if not lastTime or now - lastTime >= 0.04 then
+                    promptTimes[prompt] = now
+                    firePrompt(prompt, 25, 0)
+                end
+            end
+        end
+        task.defer(function()
+            checkAndFire()
+        end)
+        pcall(function()
+            prompt:GetPropertyChangedSignal("Enabled"):Connect(function()
+                if prompt.Enabled then
+                    checkAndFire()
+                end
+            end)
+        end)
+        prompt.AncestryChanged:Connect(function()
+            if not prompt:IsDescendantOf(workspace) then
+                promptMap[prompt] = nil
+                promptCooldowns[prompt] = nil
+                promptTimes[prompt] = nil
+            end
+        end)
+    end
+    local function scanPlots()
+        local plotsFolderRef = workspace:FindFirstChild("Plots")
+        if not plotsFolderRef then
+            return
+        end
+        for _, plot in ipairs(plotsFolderRef:GetChildren()) do
+            local podiums = plot:FindFirstChild("AnimalPodiums")
+            if podiums then
+                for _, desc in ipairs(podiums:GetDescendants()) do
+                    if desc:IsA("ProximityPrompt") then
+                        setupPrompt(desc)
+                    end
+                end
+            end
+        end
+    end
+    scanPlots()
+    workspace.DescendantAdded:Connect(function(desc)
+        if desc:IsA("ProximityPrompt") and desc:FindFirstAncestor("AnimalPodiums") then
+            setupPrompt(desc)
+        end
+    end)
+    task.spawn(function()
+        while task.wait(_G.getSafePollRate()) do
+            local root = getRootPart()
+            if not root then
+                C_Auto.AUTO_STEAL = false
+                continue
+            end
+            local pos = root.Position
+            local activeFound = false
+            for prompt in pairs(promptMap) do
+                if isPromptValid(prompt, pos) then
+                    activeFound = true
+                    if C_Auto.AUTO_STEAL then
+                        firePrompt(prompt, 5, 0.05)
+                    end
+                end
+            end
+            C_Auto.AUTO_STEAL = activeFound
+        end
+    end)
+end
+
+local ConfigHolder = {
+    Players = game:GetService("Players"),
+    RunService = game:GetService("RunService"),
+    UserInputService = game:GetService("UserInputService"),
+    ReplicatedStorage = game:GetService("ReplicatedStorage"),
+    TweenService = game:GetService("TweenService"),
+    HttpService = game:GetService("HttpService"),
+    Workspace = game:GetService("Workspace"),
+    Lighting = game:GetService("Lighting"),
+    GuiService = game:GetService("GuiService"),
+    TeleportService = game:GetService("TeleportService"),
+}
+local PlayersRef = ConfigHolder.Players
+local RunSvcRef = ConfigHolder.RunService
+local UISvcRef = ConfigHolder.UserInputService
+local RepStorageRef = ConfigHolder.ReplicatedStorage
+local TweenSvcRef = ConfigHolder.TweenService
+local HttpSvcRef = ConfigHolder.HttpService
+local WorkspaceRef = ConfigHolder.Workspace
+local LocalPlayerRef = PlayersRef.LocalPlayer
+local PlayerGuiRef = LocalPlayerRef:WaitForChild("PlayerGui")
+
+local NetProxy = setmetatable({}, {
+    __index = function(_, key)
+        local netFolder = RepStorageRef.Packages.Net
+        local prefix, remoteName
+        if key:sub(1, 3) == "RE/" then
+            prefix = "RE/"
+            remoteName = key:sub(4)
+        elseif key:sub(1, 3) == "RF/" then
+            prefix = "RF/"
+            remoteName = key:sub(4)
+        else
+            return nil
+        end
+        local foundRemote
+        for idx, child in ipairs(netFolder:GetChildren()) do
+            if child.Name == key then
+                foundRemote = netFolder:GetChildren()[idx + 1]
+                break
+            end
+        end
+        if foundRemote and not rawget(NetProxy, key) then
+            rawset(NetProxy, key, foundRemote)
+        end
+        return rawget(NetProxy, key)
+    end,
+})
+
+local NetWrapper = {}
+function NetWrapper:LarpNet(name)
+    return NetProxy[name]
+end
+
+local function isTouchDevice()
+    return UISvcRef.TouchEnabled and not UISvcRef.KeyboardEnabled and not UISvcRef.MouseEnabled
+end
+local UI_PANEL_W = 320
+local UI_SCALE = 0.60
+local ConfigData = {
+    Positions = {
+        AutoSteal = { X = 0, Y = 0, OffsetX = 14, OffsetY = 80 },
+        TargetControls = { X = 0, Y = 0, OffsetX = 14 + UI_PANEL_W * UI_SCALE + 10, OffsetY = 80 },
+        JobID = { X = 0.5, Y = 0, OffsetX = -180, OffsetY = 300 },
+    },
+    MenuKey = "LeftControl",
+    MobileGuiScale = 0.5,
+    UIScale = 1.0,
+    ShowJobID = true,
+    StealNearest = false,
+    StealHighest = true,
+    StealPriority = false,
+    DefaultToNearest = false,
+    DefaultToHighest = false,
+    DefaultToPriority = false,
+    UILocked = false,
+    HideAutoSteal = false,
+    CompactAutoSteal = false,
+    InstantSteal = false,
+    nextBaseEnabled = false,
+    XRay = false,
+    PlayerESP = false,
+    podiumESP = false,
+    TurretESP = false,
+    TrapESP = false,
+    BrainrotESP = false,
+    BrainrotESPMinGen = 10000000,
+    AntiRagdoll = true,
+    AntiBeeDisco = true,
+    AntiDie = true,
+    AutoTurret = false,
+    ToolAimbot = false,
+    StealBoost = false,
+    StealBoostValue = 28,
+    AntiLag = false,
+    CarpetSpeed = false,
+    CarpetSpeedValue = 140,
+    CarpetSpeedKey = "Q",
+    DropKey = "R",
+    InstantResetKey = "X",
+    AutoKickKey = "K",
+    StealBoostKey = "B",
+    KickKey = "P",
+    InfJump = true,
+    AutoKickOnSteal = false,
+    FOV = 80,
+    ResetCooldown = 2.5,
+    ResetFlingTime = 5,
+    PriorityList = {
+        "Strawberry Elephant",
+        "Meowl",
+        "Skibidi Toilet",
+        "Headless Horseman",
+        "Dragon Gingerini",
+        "Dragon Cannelloni",
+        "Ketupat Bros",
+        "Hydra Dragon Cannelloni",
+        "La Supreme Combinasion",
+        "Love Love Bear",
+        "Ginger Gerat",
+        "Cerberus",
+        "Capitano Moby",
+        "La Casa Boo",
+        "Burguro and Fryuro",
+        "Spooky and Pumpky",
+        "Cooki and Milki",
+        "Rosey and Teddy",
+        "Popcuru and Fizzuru",
+        "Reinito Sleighito",
+        "Fragrama and Chocrama",
+        "Garama and Madundung",
+        "Ketchuru and Musturu",
+        "La Secret Combinasion",
+        "Tralaledon",
+        "Tictac Sahur",
+        "Ketupat Kepat",
+        "Tang Tang Keletang",
+        "Orcaledon",
+        "La Ginger Sekolah",
+        "Los Spaghettis",
+        "Lavadorito Spinito",
+        "Swaggy Bros",
+        "La Taco Combinasion",
+        "Los Primos",
+        "Chillin Chili",
+        "Tuff Toucan",
+        "W or L",
+        "Chillin Chili",
+        "Chipso and Queso",
+    },
+}
+
+function DeepCopy(tbl)
+    if type(tbl) ~= "table" then
+        return tbl
+    end
+    local copy = {}
+    for k, v in pairs(tbl) do
+        copy[k] = DeepCopy(v)
+    end
+    return copy
+end
+
+function MergeDefaults(target, defaults)
+    for k, v in pairs(defaults) do
+        if type(v) == "table" then
+            if type(target[k]) ~= "table" then
+                target[k] = DeepCopy(v)
+            else
+                MergeDefaults(target[k], v)
+            end
+        elseif target[k] == nil then
+            target[k] = v
+        end
+    end
+end
+
+local i = DeepCopy(ConfigData)
+
+local function currentUIScale()
+    return math.clamp(tonumber(i.UIScale) or 1.0, 0.3, 2.0)
+end
+
+local function deviceClass()
+    local uis = game:GetService("UserInputService")
+    local touch, kbd, mouse = false, false, false
+    pcall(function()
+        touch, kbd, mouse = uis.TouchEnabled, uis.KeyboardEnabled, uis.MouseEnabled
+    end)
+    if not touch or kbd or mouse then return "desktop" end
+    local cam = workspace.CurrentCamera
+    local vp = cam and cam.ViewportSize
+    local shortSide = (vp and vp.X > 0 and vp.Y > 0) and math.min(vp.X, vp.Y) or 400
+    return shortSide >= 600 and "tablet" or "phone"
+end
+PState.DeviceClass = deviceClass
+
+local function RegisterUIScale(targetFrame)
+    if not targetFrame then return end
+    local existing = targetFrame:FindFirstChildOfClass("UIScale")
+    if existing then existing:Destroy() end
+    local sc = Instance.new("UIScale")
+    sc.Scale = currentUIScale()
+    sc.Parent = targetFrame
+    PState.MobileScaleObjects[targetFrame] = sc
+end
+
+PState.RefreshUIScale = function()
+    local s = currentUIScale()
+    for frame, sc in pairs(PState.MobileScaleObjects) do
+        if sc and sc.Parent == frame then
+            sc.Scale = s
+        else
+            PState.MobileScaleObjects[frame] = nil
+        end
+    end
+end
+
+local TGT = {}
+TGT.MAC_RED = Color3.fromRGB(255, 95, 87)
+TGT.MAC_YELLOW = Color3.fromRGB(254, 188, 46)
+TGT.MAC_GREEN = Color3.fromRGB(40, 200, 64)
+TGT.OUTLINE = Color3.fromRGB(186, 117, 245)
+TGT.FPS = Color3.fromRGB(242, 170, 58)
+TGT.PING = Color3.fromRGB(70, 224, 140)
+
+function TGT.grad(obj, stops, rotation)
+    local cs, ns = {}, {}
+    for _, st in ipairs(stops) do
+        cs[#cs + 1] = ColorSequenceKeypoint.new(st[1], st[2])
+        ns[#ns + 1] = NumberSequenceKeypoint.new(st[1], st[3] or 0)
+    end
+    local g = Instance.new("UIGradient")
+    g.Color = ColorSequence.new(cs)
+    g.Transparency = NumberSequence.new(ns)
+    g.Rotation = rotation or 0
+    g.Parent = obj
+    return g
+end
+
+function TGT.panelGrad(obj)
+    return TGT.grad(obj, {
+        { 0, Color3.fromRGB(23, 9, 39), 0.06 },
+        { 0.25, Color3.fromRGB(41, 16, 67), 0.08 },
+        { 0.5, Color3.fromRGB(61, 24, 95), 0.10 },
+        { 0.75, Color3.fromRGB(80, 34, 122), 0.12 },
+        { 1, Color3.fromRGB(18, 7, 30), 0.06 },
+    }, 135)
+end
+
+function TGT.strokeGrad(obj)
+    return TGT.grad(obj, {
+        { 0, Color3.fromRGB(129, 65, 181), 0.45 },
+        { 0.5, Color3.fromRGB(186, 117, 245), 0.22 },
+        { 1, Color3.fromRGB(100, 47, 149), 0.42 },
+    }, 90)
+end
+
+function TGT.shadow(obj)
+    local sh = Instance.new("ImageLabel")
+    sh.Name = "Shadow"
+    sh.ZIndex = 0
+    sh.AnchorPoint = Vector2.new(0.5, 0.5)
+    sh.Position = UDim2.new(0.5, 0, 0.5, 4)
+    sh.Size = UDim2.new(1, 46, 1, 46)
+    sh.BackgroundTransparency = 1
+    sh.Image = "rbxassetid://6014261993"
+    sh.ImageColor3 = Color3.fromRGB(11, 4, 19)
+    sh.ImageTransparency = 0.22
+    sh.ScaleType = Enum.ScaleType.Slice
+    sh.SliceCenter = Rect.new(49, 49, 450, 450)
+    sh.Parent = obj
+    return sh
+end
+
+function TGT.macDots(parent, dotSize, startX, gap, zindex)
+    dotSize = dotSize or 11
+    startX = startX or 15
+    gap = gap or 18
+    local cols = { TGT.MAC_RED, TGT.MAC_YELLOW, TGT.MAC_GREEN }
+    for idx, col in ipairs(cols) do
+        local d = Instance.new("Frame", parent)
+        d.Name = "Dot" .. idx
+        d.AnchorPoint = Vector2.new(0, 0.5)
+        d.Position = UDim2.new(0, startX + gap * (idx - 1), 0.5, 0)
+        d.Size = UDim2.fromOffset(dotSize, dotSize)
+        d.BackgroundColor3 = col
+        d.BackgroundTransparency = idx == 1 and 0 or 0.55
+        d.BorderSizePixel = 0
+        d.ZIndex = zindex or 105
+        Instance.new("UICorner", d).CornerRadius = UDim.new(0, math.ceil(dotSize / 2))
+    end
+end
+
+function TGT.dressPanel(panel, radius)
+    panel.BackgroundColor3 = Color3.fromRGB(42, 17, 69)
+    panel.BackgroundTransparency = 0.35
+    TGT.panelGrad(panel)
+    TGT.shadow(panel)
+    local st = panel:FindFirstChildOfClass("UIStroke")
+    if not st then
+        st = Instance.new("UIStroke", panel)
+        st.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    end
+    st.Color = TGT.OUTLINE
+    st.Thickness = 1.4
+    st.Transparency = 0
+    TGT.strokeGrad(st)
+    return st
+end
+
+function TGT.minimizeBtn(parent, zindex)
+    local b = Instance.new("TextButton", parent)
+    b.Name = "Minimize"
+    b.AnchorPoint = Vector2.new(1, 0.5)
+    b.Position = UDim2.new(1, -10, 0.5, 0)
+    b.Size = UDim2.fromOffset(30, 27)
+    b.BackgroundTransparency = 1
+    b.BorderSizePixel = 0
+    b.AutoButtonColor = false
+    b.Font = Enum.Font.GothamBlack
+    b.Text = "-"
+    b.TextSize = 19
+    b.TextColor3 = TGT.MAC_YELLOW
+    b.ZIndex = zindex or 106
+    return b
+end
+PState.TGT = TGT
+
+PState.ToggleUIPainters = {}
+_G.SlicedzSyncToggleUI = function(name, on)
+    local painter = PState.ToggleUIPainters[name]
+    if painter then pcall(painter, on) end
+end
+
+do
+    local UIS = game:GetService("UserInputService")
+    local function keyFor(field, fallback)
+        local name = i[field]
+        if type(name) ~= "string" or name == "" then name = fallback end
+        return Enum.KeyCode[name]
+    end
+    UIS.InputBegan:Connect(function(input, processed)
+        if processed then return end
+        if input.UserInputType ~= Enum.UserInputType.Keyboard then return end
+        local code = input.KeyCode
+        local menuName = i.SavedKeybinds and i.SavedKeybinds.MenuKey or i.MenuKey
+        if code == Enum.KeyCode[menuName or "LeftControl"] then
+            if #PState.PanelsToReveal == 0 then PState.ToggleUI() end
+        elseif code == keyFor("DropKey", "R") then
+            if type(_G.StickyDropBrainrot) == "function" then
+                task.spawn(_G.StickyDropBrainrot)
+            end
+        elseif code == keyFor("InstantResetKey", "X") then
+            if type(_G.StickyInstaReset) == "function" then
+                task.spawn(_G.StickyInstaReset)
+            end
+        elseif code == keyFor("KickKey", "P") then
+            if type(_G.StickyKickOut) == "function" then
+                task.spawn(_G.StickyKickOut)
+            end
+        elseif code == keyFor("StealBoostKey", "B") then
+            local on = not (i.StealBoost == true)
+            if type(_G.setStealBoost) == "function" then
+                task.spawn(_G.setStealBoost, on)
+            end
+        elseif code == keyFor("AutoKickKey", "K") then
+            local on = not (_G.StickyAutoKickOnSteal == true)
+            _G.StickyAutoKickOnSteal = on
+            _G.SlicedzSyncToggleUI("Auto Kick", on)
+            if _G.StickySaveConfigNow then task.spawn(_G.StickySaveConfigNow) end
+        end
+    end)
+end
+
+PState.PanelsToReveal = {}
+PState.HoldPanel = function(inst)
+    if not inst then return end
+    PState.PanelsToReveal[#PState.PanelsToReveal + 1] = inst
+    inst.Visible = false
+end
+
+PState.UIHidden = false
+PState.SetUIHidden = function(hidden)
+    PState.UIHidden = hidden and true or false
+    for _, inst in ipairs({ PState.AutoStealFrame, PState.TargetControlsFrame, PState.JobIDFrame }) do
+        if inst and inst.Parent then inst.Visible = not PState.UIHidden end
+    end
+    if PState.MenuButton then
+        PState.MenuButton.Text = PState.UIHidden and "+" or "x"
+    end
+end
+PState.ToggleUI = function()
+    PState.SetUIHidden(not PState.UIHidden)
+end
+PState.RevealPanels = function()
+    local pending = PState.PanelsToReveal
+    PState.PanelsToReveal = {}
+    for _, inst in ipairs(pending) do
+        if inst and inst.Parent then inst.Visible = true end
+    end
+end
+task.delay(15, function()
+    if #PState.PanelsToReveal > 0 then PState.RevealPanels() end
+end)
+
+function NormalizeKeyName(O, U)
+    if type(O) ~= "string" or O == "" then
+        return U
+    end
+    local y = {
+        ALT = "LeftAlt",
+        LALT = "LeftAlt",
+        RALT = "RightAlt",
+        CTRL = "LeftControl",
+        CONTROL = "LeftControl",
+        LCTRL = "LeftControl",
+        RCTRL = "RightControl",
+        SHIFT = "LeftShift",
+        LSHIFT = "LeftShift",
+        RSHIFT = "RightShift",
+        WIN = "LeftSuper",
+        CMD = "LeftSuper",
+        META = "LeftSuper",
+    }
+    local K = string.upper(O)
+    local q = y[K] or O
+    return Enum.KeyCode[q] and q or O
+end
+function PrettyKeyName(O)
+    local U = {
+        LeftAlt = "ALT",
+        RightAlt = "RALT",
+        LeftControl = "CTRL",
+        RightControl = "RCTRL",
+        LeftShift = "SHIFT",
+        RightShift = "RSHIFT",
+        LeftSuper = "WIN",
+        RightSuper = "RWIN",
+    }
+    return U[O] or tostring(O or "")
+end
+if isfile and isfile("SlicedzHub.json") then
+    pcall(function()
+        local O = readfile("SlicedzHub.json")
+        if not O or O == "" then
+            return
+        end
+        local U = HttpSvcRef:JSONDecode(O)
+        if type(U) ~= "table" then
+            return
+        end
+        local O = nil
+        if type(U.PriorityList) == "table" then
+            O = DeepCopy(U.PriorityList)
+        end
+        MergeDefaults(U, ConfigData)
+        if O ~= nil then
+            U.PriorityList = O
+        end
+        i = U
+    end)
+end
+if i.Positions then
+    i.Positions.Settings = { X = 0.5, Y = 0.5, OffsetX = 0, OffsetY = 0 }
+end
+if i.LayoutRev ~= 4 then
+    i.Positions = i.Positions or {}
+    i.Positions.AutoSteal = DeepCopy(ConfigData.Positions.AutoSteal)
+    i.Positions.TargetControls = DeepCopy(ConfigData.Positions.TargetControls)
+    i.LayoutRev = 4
+    i.FixedLayout = nil
+    _needMigrationSave = true
+end
+function EnsureSavedKeybinds()
+    i.SavedKeybinds = i.SavedKeybinds or {}
+    i.SavedKeybinds.MenuKey =
+        NormalizeKeyName(i.SavedKeybinds.MenuKey or i.MenuKey, ConfigData.MenuKey or "LeftControl")
+end
+function ApplySavedKeybindsToConfig()
+    EnsureSavedKeybinds()
+    i.MenuKey = i.SavedKeybinds.MenuKey
+end
+function NormalizeAllKeybinds()
+    EnsureSavedKeybinds()
+    ApplySavedKeybindsToConfig()
+end
+NormalizeAllKeybinds()
+local function saveConfigToFile()
+    if writefile then
+        pcall(function()
+            NormalizeAllKeybinds()
+            local y = DeepCopy(i)
+            y.MenuKey = i.SavedKeybinds.MenuKey
+            writefile("SlicedzHub.json", HttpSvcRef:JSONEncode(y))
+        end)
+    end
+end
+if _needMigrationSave then
+    saveConfigToFile()
+end
+do
+    _G.StickyCarpetSpeed = i.CarpetSpeed == true
+    _G.StickyCarpetSpeedValue = math.clamp(tonumber(i.CarpetSpeedValue) or 140, 20, 400)
+    _G.StickyCarpetSpeedKeyName = type(i.CarpetSpeedKey) == "string" and i.CarpetSpeedKey or "Q"
+    _G.StickyInfJump = i.InfJump ~= false
+    _G.StickyAutoKickOnSteal = i.AutoKickOnSteal == true
+    _G.StickyFOV = tonumber(i.FOV) or 80
+    _G.StickyResetCooldown = tonumber(i.ResetCooldown) or 2.5
+    _G.StickyResetFlingTime = tonumber(i.ResetFlingTime) or 5
+    _G.StickyAntiBee = i.AntiBeeDisco ~= false
+    _G.StickyAntiDieDisabled = i.AntiDie == false
+
+    local function syncGlobalsToConfig()
+        i.CarpetSpeedValue = math.clamp(tonumber(_G.StickyCarpetSpeedValue) or 140, 20, 400)
+        i.FOV = tonumber(_G.StickyFOV) or i.FOV
+        i.ResetCooldown = tonumber(_G.StickyResetCooldown) or i.ResetCooldown
+        i.ResetFlingTime = tonumber(_G.StickyResetFlingTime) or i.ResetFlingTime
+        i.AntiBeeDisco = _G.StickyAntiBee ~= false
+        i.AntiDie = _G.StickyAntiDieDisabled ~= true
+        if type(_G.StickyCarpetSpeedKeyName) == "string" then
+            i.CarpetSpeedKey = _G.StickyCarpetSpeedKeyName
+        end
+        if _G.StickyInfJump ~= nil then i.InfJump = _G.StickyInfJump == true end
+        if _G.StickyCarpetSpeed ~= nil then i.CarpetSpeed = _G.StickyCarpetSpeed == true end
+        if _G.StickyAutoKickOnSteal ~= nil then i.AutoKickOnSteal = _G.StickyAutoKickOnSteal == true end
+    end
+
+    local lastSnapshot = nil
+    _G.StickySaveConfigNow = function()
+        pcall(function()
+            syncGlobalsToConfig()
+            local snap = HttpSvcRef:JSONEncode(i)
+            if snap ~= lastSnapshot then
+                lastSnapshot = snap
+                saveConfigToFile()
+            end
+        end)
+    end
+
+    task.spawn(function()
+        task.wait(5)
+        while true do
+            _G.StickySaveConfigNow()
+            task.wait(5)
+        end
+    end)
+end
+do
+    local ready = false
+    local waiters = {}
+
+    _G.StickyOnBoot = function(fn)
+        if type(fn) ~= "function" then return end
+        if ready then task.spawn(fn) return end
+        waiters[#waiters + 1] = fn
+    end
+
+    task.spawn(function()
+        local deadline = os.clock() + 30
+        while not workspace:FindFirstChild("Plots") and os.clock() < deadline do
+            task.wait(0.25)
+        end
+        local charDeadline = os.clock() + 15
+        while os.clock() < charDeadline do
+            local ch = LocalPlayerRef.Character
+            if ch and ch:FindFirstChild("HumanoidRootPart") and ch:FindFirstChildOfClass("Humanoid") then
+                break
+            end
+            task.wait(0.25)
+        end
+        task.wait(1.5)
+        ready = true
+        for _, fn in ipairs(waiters) do task.spawn(fn) end
+        waiters = {}
+    end)
+end
+do
+    local Config = i
+    local saveConfig = saveConfigToFile
+
+    local function setToggle(name, enabled)
+        local sync = _G.SlicedzSyncToggleUI
+        if type(sync) == "function" then
+            pcall(sync, name, enabled)
+        end
+    end
+
+    if _G.StickyXray      == nil then _G.StickyXray      = true end
+    if _G.StickyXrayAlpha == nil then _G.StickyXrayAlpha = 0.9  end
+
+    ;(function()
+        local FOLDERS = { "Base", "PlotSign", "FriendPanel", "Cash", "Laser",
+            "Decorations", "Skin", "Unlock", "Purchases" }
+        local orig = setmetatable({}, { __mode = "k" })
+        local conns, gen = {}, 0
+
+        local function paint(o, a)
+            if not o:IsA("BasePart") then return end
+            if orig[o] == nil then orig[o] = (o.Transparency == a) and 0 or o.Transparency end
+            local base = orig[o]
+            if base >= 1 then return end
+            local want = base + (1 - base) * a
+            if math.abs(o.Transparency - want) > 0.01 then o.Transparency = want end
+        end
+
+        local function calm()
+            while _G.StickyStealHold do task.wait(0.15) end
+        end
+
+        local function track(root, a, id)
+            if not root or id ~= gen then return end
+            paint(root, a)
+            local n = 0
+            for _, d in ipairs(root:GetDescendants()) do
+                if id ~= gen then return end
+                paint(d, a)
+                n = n + 1
+                if n % 250 == 0 then task.wait() end
+            end
+            conns[#conns + 1] = root.DescendantAdded:Connect(function(d)
+                if id == gen then paint(d, a) end
+            end)
+        end
+
+        local function doPlot(plot, a, id)
+            if not plot or id ~= gen then return end
+            for _, fname in ipairs(FOLDERS) do
+                if id ~= gen then return end
+                track(plot:FindFirstChild(fname), a, id)
+            end
+            if id ~= gen then return end
+            conns[#conns + 1] = plot.ChildAdded:Connect(function(c)
+                if id ~= gen then return end
+                for _, fname in ipairs(FOLDERS) do
+                    if c.Name == fname then track(c, a, id) break end
+                end
+            end)
+            local pods = plot:FindFirstChild("AnimalPodiums")
+            if not pods then return end
+            local function pod(pd)
+                for _, c in ipairs(pd:GetChildren()) do
+                    if c.Name == "Claim" then track(c, a, id)
+                    elseif c.Name == "Base" then track(c:FindFirstChild("Decorations"), a, id) end
+                end
+            end
+            for _, pd in ipairs(pods:GetChildren()) do pod(pd) end
+            conns[#conns + 1] = pods.ChildAdded:Connect(function(pd)
+                if id ~= gen then return end
+                task.wait(0.1)
+                if id == gen then pod(pd) end
+            end)
+        end
+
+        local function stop()
+            for _, c in ipairs(conns) do pcall(function() c:Disconnect() end) end
+            conns, gen = {}, gen + 1
+        end
+
+        function _G.StickyEnableXray()
+            Config.XRay = true
+            saveConfig()
+            setToggle("XRay", true)
+            setToggle("X-Ray", true)
+            stop()
+            local id = gen
+            local a = math.clamp(tonumber(_G.StickyXrayAlpha) or 0.9, 0, 1)
+            task.spawn(function()
+                while id == gen and not workspace:FindFirstChild("Plots") do 
+                    task.wait(0.5) 
+                end
+                local plots = workspace:FindFirstChild("Plots")
+                if id ~= gen or not plots then return end
+                calm()
+                for _, p in ipairs(plots:GetChildren()) do
+                    if id ~= gen then return end
+                    pcall(doPlot, p, a, id)
+                end
+            end)
+        end
+    end)()
+end
